@@ -47,7 +47,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     description:
       "Conception et développement d’un site vitrine",
     technologies: ["VueJS"],
-    logo: "",
+    logo: "/logos/default.png",
   },
   {
     dates: "2021",
@@ -57,6 +57,6 @@ export const EXPERIENCE: ExperienceProp[] = [
     description:
       "Conception et développement d’une application de gestion de maintenance d’équipement.",
     technologies: ["Ruby on Rails", "Bootstrap", "PostgreSQL"],
-    logo: "",
+    logo: "/logos/default.png",
   },
 ];
