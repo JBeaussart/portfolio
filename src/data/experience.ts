@@ -7,7 +7,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     company: "StudioHB",
     companyUrl: "https://www.studio-hb.com/",
     description:
-      "Participation à la maintenance et à l'évolution de plateformes web pour assurer leur performance, leur fiabilité et leur adéquation avec les besoins des utilisateurs. Cela inclut l’identification et la résolution des problèmes techniques, l’implémentation de nouvelles fonctionnalités, et l’optimisation des performances et de l’expérience utilisateur.",
+      "Participation à la maintenance et à l'évolution de plateformes web pour assurer leur performance, leur fiabilité en adéquation avec les besoins des utilisateurs. Cela inclut l’identification et la résolution des problèmes techniques, l’implémentation de nouvelles fonctionnalités, et l’optimisation des performances et de l’expérience utilisateur.",
     technologies: [
       "Ruby on Rails",
       "Stimulus JS",
