@@ -2,12 +2,12 @@ import type { Props as ExperienceProp } from "../components/experience/props";
 
 export const EXPERIENCE: ExperienceProp[] = [
   {
-    dates: "Septembre 2022 - Août 2024",
+    dates: "2022 - 2024",
     title: "Développeur backend",
     company: "StudioHB",
     companyUrl: "https://www.studio-hb.com/",
     description:
-      "Designed and architected dutch.com, utilizing technologies such as Shopify Storefront API, Admin API, Vue.JS, Node.JS, Liquid, Alpine.js, and Tailwind. Worked on integrating with the ReCharge subscription system and collaborated closely with designers to implement pixel-perfect layouts and user flows.",
+      "Participation à la maintenance et à l'évolution de plateformes web pour assurer leur performance, leur fiabilité et leur adéquation avec les besoins des utilisateurs. Cela inclut l’identification et la résolution des problèmes techniques, l’implémentation de nouvelles fonctionnalités, et l’optimisation des performances et de l’expérience utilisateur.",
     technologies: [
       "Ruby on Rails",
       "Stimulus JS",
@@ -18,15 +18,20 @@ export const EXPERIENCE: ExperienceProp[] = [
     logo: "/logos/shb.jpeg",
   },
   {
-    dates: "March 2021 — November 2021",
+    dates: "2021 — 2022",
     title: "Développeur backend",
     company: "CitronMauve",
     companyUrl: "",
     description:
-      "Developed and maintained e-commerce solutions on Shopify (Storefront API, Admin API), BigCommerce, and Magento using React JS, Vue JS, Node JS, Liquid, SASS/PostCSS. Worked on integrating with the ReCharge subscription system and collaborated closely with designers to implement pixel-perfect layouts and user flows.",
+      "Création from scratch d'un scraper de donnée en Ruby. Développement d'une application de gestion et de mise en place de sauvegardes à distance (Avamar), de supervision de divers postes (Zabbix) et de prise en main à distance (ISL). L'architecture est composée d'une API Ruby on Rails et de trois microservices en Ruby le frontend est en VueJS.",
     technologies: [
       "Ruby",
+      "Ruby on Rails",
+      "Rspec",
+      "VuejS",
       "RabbitMQ",
+      "Zabbix",
+      "Avamar",
       "Sequel",
       "GrPC",
       "Warden",
@@ -35,23 +40,23 @@ export const EXPERIENCE: ExperienceProp[] = [
     logo: "/logos/citronmauve.png",
   },
   {
-    dates: "December 2019 — January 2021",
+    dates: "2021",
     title: "Développeur frontend",
     company: "",
     companyUrl: "",
     description:
-      "Created a Design System for the internal system using Figma. Developed a plugin for Figma to populate prototypes with real data to enhance the prototyping and testing experience. Conducted user research and testing, and created user flows, wireframes, and Hi-Fi prototypes.",
+      "Conception et développement d’un site vitrine",
     technologies: ["VueJS"],
-    logo: "/logos/miinto.jpeg",
+    logo: "",
   },
   {
-    dates: "January 2019 — September 2019",
+    dates: "2021",
     title: "Développeur fullstack",
     company: "",
     companyUrl: "",
     description:
-      "Création from scratch d'une application de gestion de maintenance",
+      "Conception et développement d’une application de gestion de maintenance d’équipement.",
     technologies: ["Ruby on Rails", "Bootstrap", "PostgreSQL"],
-    logo: "/logos/efigence.jpeg",
+    logo: "",
   },
 ];
