@@ -39,17 +39,17 @@ export const EXPERIENCE: ExperienceProp[] = [
   {
     dates: "2021",
     title: "Développeur frontend",
-    company: "",
+    company: "Freelance",
     companyUrl: "",
     description:
-      "Conception et développement d’un site vitrine",
+      "Conception et développement d’un site vitrine en VueJS 3",
     technologies: ["VueJS"],
     logo: "/logos/default.png",
   },
   {
     dates: "2021",
     title: "Développeur fullstack",
-    company: "",
+    company: "Freelance",
     companyUrl: "",
     description:
       "Conception et développement d’une application de gestion de maintenance d’équipement.",
