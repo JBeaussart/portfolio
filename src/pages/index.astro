@@ -1,9 +1,9 @@
 ---
-import Component from "../components/Component.astro";
-import Experience from "../components/experience/index.astro";
-import { EXPERIENCE } from "../data/experience";
-import { SOCIALS } from "../data/socials";
-import Layout from "../layouts/Layout.astro";
+import Component from '../components/Component.astro';
+import Experience from '../components/experience/index.astro';
+import { EXPERIENCE } from '../data/experience';
+import { SOCIALS } from '../data/socials';
+import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Jérémy Beaussart">
@@ -18,11 +18,7 @@ import Layout from "../layouts/Layout.astro";
           <div
             class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left"
           >
-            <img
-              src="/avatar.png"
-              alt="Jérémy Beaussart"
-              class="w-16 h-16 rounded-full"
-            />
+            <img src="/avatar.png" alt="Jérémy Beaussart" class="w-16 h-16 rounded-full" />
             <div>
               <a
                 href="/"
@@ -39,24 +35,17 @@ import Layout from "../layouts/Layout.astro";
                 href="mailto:jeremy.beaussart@gmail.com"
                 class="inline-flex transition-all border-neutral-700 hover:border-opacity-0 border-opacity-50 shadow rounded-md border backdrop-blur-xl bg-neutral-400/10 px-3 py-2.5 items-center text-white font-semibold group p-2 text-sm gap-x-2 mt-4"
               >
-
-              <span>Me contacter</span>
-              <sapn
-                class="w-2 h-2 rounded-full bg-green-400 duration-1000 animate-pulse"
-              >
-              </sapn>
+                <span>Me contacter</span>
+                <sapn class="w-2 h-2 rounded-full bg-green-400 duration-1000 animate-pulse"> </sapn>
               </a>
 
               <a
-                href="/cv.pdf" download
+                href="/jeremy-beaussart-cv.pdf"
+                download
                 class="inline-flex transition-all border-neutral-700 hover:border-opacity-0 border-opacity-50 shadow rounded-md border backdrop-blur-xl bg-neutral-400/10 px-3 py-2.5 items-center text-white font-semibold group p-2 text-sm gap-x-2 mt-4"
               >
-
-              <span>Télécharger mon CV</span>
-              <sapn
-                class="w-2 h-2 rounded-full bg-blue-400 duration-1000 animate-pulse"
-              >
-              </sapn>
+                <span>Télécharger mon CV</span>
+                <sapn class="w-2 h-2 rounded-full bg-blue-400 duration-1000 animate-pulse"> </sapn>
               </a>
             </div>
           </div>
@@ -95,12 +84,22 @@ import Layout from "../layouts/Layout.astro";
             <div>
               <div class="mb-4 space-y-4">
                 <p>
-                  Après plus de 10 ans d'expérience dans le domaine pharmaceutique
-                  et médical en qualité de cadre en microchirurgie vasculaire,
-                  j'ai décidé de me reconvertir comme développeur web.
-                  J'ai pu faire mes premières armes en tant que développeur web chez
-                  <a style="text-decoration: underline;" href="https://hookto.fr/" target="_blank" rel="noreferrer noopener">Hookto</a>
-                  (anciennement CitronMauve) et chez <a style="text-decoration: underline;" href="https://www.studio-hb.com/" target="_blank" rel="noreferrer noopener">StudioHB</a >.
+                  Après plus de 10 ans d'expérience dans le domaine pharmaceutique et médical en
+                  qualité de cadre en microchirurgie vasculaire, j'ai décidé de me reconvertir comme
+                  développeur web. J'ai pu faire mes premières armes en tant que développeur web
+                  chez
+                  <a
+                    style="text-decoration: underline;"
+                    href="https://hookto.fr/"
+                    target="_blank"
+                    rel="noreferrer noopener">Hookto</a
+                  >
+                  (anciennement CitronMauve) et chez <a
+                    style="text-decoration: underline;"
+                    href="https://www.studio-hb.com/"
+                    target="_blank"
+                    rel="noreferrer noopener">StudioHB</a
+                  >.
                 </p>
 
                 <p>Je suis actuellement ouvert à de nouvelles opportunités.</p>
@@ -112,20 +111,19 @@ import Layout from "../layouts/Layout.astro";
             class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
             aria-label="Work experience"
           >
-              <ol class="group/list space-y-12">
-                {EXPERIENCE.map((experience) => <Experience {...experience} />)}
-              </ol>
-            </div>
+            <ol class="group/list space-y-12">
+              {EXPERIENCE.map((experience) => <Experience {...experience} />)}
+            </ol>
           </section>
         </main>
       </div>
     </div>
   </div>
-
-  <footer class="text-center py-4 text-xs">
-    {new Date().getFullYear()} All rights reserved.
-  </footer>
 </Layout>
+
+<footer class="text-center py-4 text-xs">
+  {new Date().getFullYear()} All rights reserved.
+</footer>
 
 <style scoped>
   @keyframes fadeIn {
