@@ -84,68 +84,56 @@ import Layout from '../layouts/Layout.astro';
             <div>
               <div class="mb-4 space-y-4">
                 <p>
-                  Après plus de 10 ans d'expérience dans le domaine pharmaceutique et médical en
-                  qualité de cadre en microchirurgie vasculaire, j'ai décidé de me reconvertir comme
-                  développeur web. J'ai pu faire mes premières armes en tant que développeur web
-                  chez
-                  <a
-                    style="text-decoration: underline;"
-                    href="https://hookto.fr/"
-                    target="_blank"
-                    rel="noreferrer noopener">Hookto</a
-                  >
-                  (anciennement CitronMauve) et chez <a
-                    style="text-decoration: underline;"
-                    href="https://www.studio-hb.com/"
-                    target="_blank"
-                    rel="noreferrer noopener">StudioHB</a
-                  >.
-                </p>
+                  Développeur backend avec une solide expérience en agence, je me distingue par un
+                  profil atypique : un background dans le domaine médical qui m'a forgé une rigueur
+                  et une capacité à résoudre des problèmes complexes, aujourd'hui au service de mes
+                  projets techniques.
 
-                <p>Je suis actuellement ouvert à de nouvelles opportunités.</p>
+                  <p>Je suis actuellement ouvert à de nouvelles opportunités.</p>
+                </p>
               </div>
             </div>
-          </section>
-          <section
-            id="experience"
-            class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-            aria-label="Work experience"
-          >
-            <ol class="group/list space-y-12">
-              {EXPERIENCE.map((experience) => <Experience {...experience} />)}
-            </ol>
+            <section
+              id="experience"
+              class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+              aria-label="Work experience"
+            >
+              <ol class="group/list space-y-12">
+                {EXPERIENCE.map((experience) => <Experience {...experience} />)}
+              </ol>
+            </section>
           </section>
         </main>
       </div>
     </div>
   </div>
-</Layout>
 
-<footer class="text-center py-4 text-xs">
-  {new Date().getFullYear()} All rights reserved.
-</footer>
+  <footer class="text-center py-4 text-xs">
+    {new Date().getFullYear()} All rights reserved.
+  </footer>
 
-<style scoped>
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
+  <style scoped>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
-    100% {
-      opacity: 1;
+
+    .hero {
+      background-image: url(/pattern.svg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      overflow-y: visible;
+      overflow-x: clip;
     }
-  }
 
-  .hero {
-    background-image: url(/pattern.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    overflow-y: visible;
-    overflow-x: clip;
-  }
-
-  /*
+    /*
   .hero {
     animation: fadeIn 3s;
   }
    */
-</style>
+  </style>
+</Layout>
