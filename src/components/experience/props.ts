@@ -5,5 +5,4 @@ export interface Props {
   companyUrl: string;
   description: string;
   technologies: string[];
-  logo?: string;
 }
