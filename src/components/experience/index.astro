@@ -27,25 +27,26 @@ const { dates, title, company, description, technologies } = Astro.props;
             <span
               class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
             ></span>
+            <span>{title} </span>
           </div>
         </div>
       </h3>
-      <p class="mt-2 text-sm leading-normal">
-        {description}
-      </p>
-      {
-        technologies.length && (
-          <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-            {technologies.map((technology) => (
-              <li class="mr-1.5 mt-2">
-                <div class="flex items-center backdrop-blur-sm rounded-full border border-neutral-700 border-opacity-50 shadow bg-neutral-400/10 px-3 py-1 text-xs font-medium leading-5 text-neutral-300">
-                  {technology}
-                </div>
-              </li>
-            ))}
-          </ul>
-        )
-      }
     </div>
+    <p class="mt-2 text-sm leading-normal">
+      {description}
+    </p>
+    {
+      technologies.length && (
+        <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+          {technologies.map((technology) => (
+            <li class="mr-1.5 mt-2">
+              <div class="flex items-center backdrop-blur-sm rounded-full border border-neutral-700 border-opacity-50 shadow bg-neutral-400/10 px-3 py-1 text-xs font-medium leading-5 text-neutral-300">
+                {technology}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )
+    }
   </div>
 </li>
