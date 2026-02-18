@@ -2,6 +2,22 @@ import type { Props as ExperienceProp } from "../components/experience/props";
 
 export const EXPERIENCE: ExperienceProp[] = [
   {
+    dates: "2024 - 2026",
+    title: "Développeur Ruby on Rails",
+    company: "Freelance",
+    companyUrl: "",
+    description:
+      "Conception, développement et maintenance d'applications web en Ruby on Rails pour divers clients. Analyse des besoins, mise en place d'architectures adaptées, et livraison de solutions performantes et maintenables.",
+    technologies: [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Docker",
+      "Tailwind",
+      "Stimulus JS",
+    ],
+    logo: "/logos/default.png",
+  },
+  {
     dates: "2022 - 2024",
     title: "Développeur backend",
     company: "StudioHB",
@@ -54,6 +70,16 @@ export const EXPERIENCE: ExperienceProp[] = [
     description:
       "Conception et développement d’une application de gestion de maintenance d’équipement.",
     technologies: ["Ruby on Rails", "Bootstrap", "PostgreSQL"],
+    logo: "/logos/default.png",
+  },
+  {
+    dates: "2011 — 2021",
+    title: "Cadre en chirurgie vasculaire",
+    company: "Bioprotec",
+    companyUrl: "",
+    description:
+      "Responsable formation suture microchirurgicale en milieu stérile. Encadrement et formation des techniciens aux différentes techniques chirurgicales. Rédaction des procédures. Veille scientifique sur les nouvelles techniques chirurgicales. Évolution des pratiques en fonction des retours clients. Production d'allogreffes vasculaires.",
+    technologies: [],
     logo: "/logos/default.png",
   },
 ];
